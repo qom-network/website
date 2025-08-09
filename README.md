@@ -1,2 +1,2 @@
-## QOM Community - Website Dummy Read Me 
+## This will be the new QOM community website construction repository.
 

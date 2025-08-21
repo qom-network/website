@@ -1,0 +1,15 @@
+# Hugo output
+public/
+resources/
+.hugo_build.lock
+
+# Editor
+.vscode/
+.claude/
+claude.md
+
+# Obsidian
+.obsidian/workspace.json
+
+# Mac Finder
+.DS_Store

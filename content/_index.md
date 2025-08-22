@@ -1,29 +1,30 @@
 ---
-title: "Welcome to Blowfish! :tada:"
-description: "This page was built using the Blowfish theme for Hugo."
+title: "QOM Movement"
+description: "A community-built, sovereign internet movement. Join us at qom.network."
+cascade:
+  showBreadcrumbs: false
 ---
+{{< typeit 
+  tag=h1
+  speed=80
+  lifeLike=true
+>}}
+Let’s unite to build something great together — a sovereign, censorship-resistant knowledge hub and qommunity platform.
+{{< /typeit >}}
 
 
-<div class="flex px-4 py-2 mb-8 text-base rounded-md bg-primary-100 dark:bg-primary-900">
-  <span class="flex items-center ltr:pr-3 rtl:pl-3 text-primary-400">
-    {{< icon "triangle-exclamation" >}}
-  </span>
-  <span class="flex items-center justify-between grow dark:text-neutral-300">
-    <span class="prose dark:prose-invert">This is a demo of the <code id="layout">background</code> layout.</span>
-    <button
-      id="switch-layout-button"
-      class="px-4 !text-neutral !no-underline rounded-md bg-primary-600 hover:!bg-primary-500 dark:bg-primary-800 dark:hover:!bg-primary-700"
-    >
-      Switch layout &orarr;
-    </button>
-  </span>
-</div>
+{{< youtubeLite id="9jZQ9dOQD0w" label="QL1 Anthem" >}}
 
 
-```shell
-npx blowfish-tools
-```  
+{{< lead >}}
+- **Open Repository** — Anyone can clone, build, and send PRs.
+- **Collective Contributions** — Design and content evolve with the community.
+- **Initial Focus** — Informational site first; security-heavy features later.
 
-{{< youtubeLite id="SgXhGb-7QbU" label="Blowfish-tools demo" >}}
+👉 **Start here**:
+- [About QOM Movement](/about/)
+- [Get Involved](/get-involved/)
+- [Docs](/docs/)
+{{< /lead >}}
 
-
+{{< github repo="qom-network/website" >}}

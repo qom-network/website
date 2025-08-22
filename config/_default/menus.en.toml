@@ -11,46 +11,37 @@
 # ordered by weight from lowest to highest.
 
 [[main]]
-  name = "Docs"
-  pageRef = "docs"
-  weight = 10
-
-[[main]]
-  name = "Parent"
-  weight = 20
-
-[[main]]
-  name = "example sub-menu 1"
-  parent = "Parent"
-  pageRef = "posts"
-  weight = 20
-
-[[main]]
-  name = "example sub-menu 2"
-  parent = "Parent"
-  pageRef = "posts"
-  weight = 20
-
-[[subnavigation]]
-  name = "An interesting topic"
-  pageRef = "tags/interesting-topic"
-  weight = 10
-
-[[subnavigation]]
-  name = "My Awesome Category"
-  pre = "github"
-  pageRef = "categories/awesome"
-  weight = 20
-
-[[main]]
-  name = "Categories"
-  pageRef = "categories"
-  weight = 20
-
-[[main]]
   name = "About"
   pageRef = "about"
-  weight = 30
+  weight = 2
+
+[[main]]
+  name = "Get Involved"
+  pageRef = "/get-involved/"
+  weight = 3
+
+[[main]]
+  name = "Docs"
+  pageRef = "/docs/"
+  weight = 4
+
+
+# [[main]]
+#  name = "example sub-menu 2"
+#  parent = "Parent"
+#  pageRef = "posts"
+#  weight = 20
+
+# [[subnavigation]]
+#  name = "An interesting topic"
+#  pageRef = "tags/interesting-topic"
+#  weight = 20
+
+[[subnavigation]]
+  name = "Contribute to QOM Movement website"
+  pre = "github"
+  url = "https://github.com/qom-network/website"
+  weight = 10
 
 
 # -- Footer Menu --
@@ -58,12 +49,13 @@
 # the copyright notice. Configure as per the main menu above.
 
 
- [[footer]]
-   name = "About"
-   pageRef = "about"
-   weight = 10
+[[footer]]
+  name = "GitHub"
+  pre = "github"
+  url = "https://github.com/qom-network/website"
+  weight = 1
 
- [[footer]]
-   name = "Categories"
-   pageRef = "categories"
-   weight = 20
+# [[footer]]
+#   name = "Categories"
+#   pageRef = "categories"
+#   weight = 20

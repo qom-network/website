@@ -2,22 +2,22 @@ disabled = false
 languageCode = "en"
 languageName = "English"
 weight = 1
-title = "QOM Movement"
+title = "QOM MOVEMENT"
 
 [params]
   displayName = "EN"
   isoCode = "en"
   rtl = false
   dateFormat = "1 May 2025"
-   logo = "img/blowfish_logo_transparent.png"
+   logo = "img/qom_movement_logo.png"
   # secondaryLogo = "img/secondary-logo.png"
   # description = "My awesome website"
   # copyright = "Copy, _right?_ :thinking_face:"
 
 [params.author]
-   name = "QOM Movement"
+   name = "QOM MOVEMENT"
 #   email = "youremail@example.com"
-   image = "img/blowfish_logo_transparent.png"
+   image = "img/qom_movement_logo.png"
    imageQuality = 96
    headline = "Teh website for Qommunity"
    bio = "For teh ppl"

@@ -7,14 +7,18 @@ cascade:
 {{< typeit 
   tag=h1
   speed=80
+  classList=color:red
   lifeLike=true
 >}}
-Let’s unite to build something great together — a sovereign, censorship-resistant knowledge hub and qommunity platform.
+United as the CTO Community.
 {{< /typeit >}}
 
 
 {{< youtubeLite id="9jZQ9dOQD0w" label="QL1 Anthem" >}}
 
+{{< lead >}}
+Let’s unite to build something great together — a sovereign, censorship-resistant knowledge hub and qommunity platform.
+{{< /lead >}}
 
 {{< lead >}}
 

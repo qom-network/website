@@ -2,6 +2,7 @@
 title: "Get Involved"
 description: "How to contribute: issues, PRs, translations, documentation, and design."
 ---
+![whale](/img/default_background4.jpg)
 {{< typeit 
   tag=h2
   speed=80

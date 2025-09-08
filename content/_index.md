@@ -7,7 +7,6 @@ cascade:
 {{< typeit 
   tag=h1
   speed=80
-  classList=color:red
   lifeLike=true
 >}}
 United as the CTO Community.

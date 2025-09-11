@@ -33,7 +33,11 @@ We assume you already have **Hugo (extended)** installed and can run a site with
 ### A. Fork and clone
 ```bash
 # Replace <your-username> with your GitHub handle
-git clone https://github.com/qom-network/website.git
+# Clone the Repository(HTTPS)
+git clone https://github.com/<your-username>/website.git
+cd qom-website
+# Clone the Repository(SSH)
+git clone git@github.com:<your-username>/website.git
 cd qom-website
 
 # Add the upstream (original) repository for syncing

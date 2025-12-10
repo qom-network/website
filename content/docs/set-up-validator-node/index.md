@@ -251,7 +251,8 @@ docker exec -it qom /home/ubuntu/bin/qomd q staking validators | grep -A 6 monik
 ```bash
 # Add delegation (increase self-stake)
 docker exec -it qom /home/ubuntu/bin/qomd tx staking delegate qomvaloper1xxxx 1000000000000000000aqom \
-  --from validator --keyring-backend file --home /home/ubuntu/.qomd --chain-id qom_766-1 --fees 1000000aqom -y
+--from validator --keyring-backend file --home /home/ubuntu/.qomd --chain-id qom_766-1 \
+--gas auto --gas-adjustment 1.5 --fees 7000000aqom -y
 
 
 # Check rewards

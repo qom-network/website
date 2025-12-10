@@ -14,12 +14,12 @@ toc: true
 Requires **Homebrew**. If not installed, run:
 
 ```bash
-/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"`
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 ```
 Then install **Qt6**:
 
 ```bash
-brew install qt@6`
+brew install qt@6
 
 ```
 
@@ -45,12 +45,12 @@ curl -L -o babelfish-macos-intel.tar.gz https://github.com/WizardLatino/babefish
 ````
 #### macOS Apple Silicon (ARM64)
 ```bash
-curl -L -o babelfish-macos-apple-silicon.tar.gz https://github.com/WizardLatino/babefish-vm-test/releases/latest/download/babelfish-macos-apple-silicon.tar.gz`
+curl -L -o babelfish-macos-apple-silicon.tar.gz https://github.com/WizardLatino/babefish-vm-test/releases/latest/download/babelfish-macos-apple-silicon.tar.gz
 ```
 #### Ubuntu (x64)
 
 ```bash
-curl -L -o babelfish-ubuntu.tar.gz https://github.com/WizardLatino/babefish-vm-test/releases/latest/download/babelfish-ubuntu.tar.gz`
+curl -L -o babelfish-ubuntu.tar.gz https://github.com/WizardLatino/babefish-vm-test/releases/latest/download/babelfish-ubuntu.tar.gz
 ```
 ---
 
@@ -108,12 +108,12 @@ chmod +x ~/.local/bin/babelfish
 #### macOS (zsh)
 
 ````bash
-echo 'export PATH="$HOME/.local/bin:$PATH"' >> ~/.zshrc source ~/.zshrc`
+echo 'export PATH="$HOME/.local/bin:$PATH"' >> ~/.zshrc source ~/.zshrc
 ````
 #### Ubuntu (bash)
 
 ```bash
-echo 'export PATH="$HOME/.local/bin:$PATH"' >> ~/.bashrc source ~/.bashrc`
+echo 'export PATH="$HOME/.local/bin:$PATH"' >> ~/.bashrc source ~/.bashrc
 ````
 
 
@@ -160,7 +160,7 @@ babelfish --debug help
 ## Uninstall
 
 ```bash
-rm ~/.local/bin/babelfish`
+rm ~/.local/bin/babelfish
 ```
 
 

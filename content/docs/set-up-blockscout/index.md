@@ -317,10 +317,6 @@ services:
     ports:
       - "${FRONTEND_PORT:-8085}:80"
 
-  stats:
-    environment:
-      STATS__BLOCKSCOUT_API_URL: "http://backend:4000"
-
   nft_media_handler: { profiles: ["off"] }
   user-ops-indexer:  { profiles: ["off"] }
 ```

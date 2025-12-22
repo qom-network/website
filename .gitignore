@@ -10,6 +10,8 @@ claude.md
 
 # Obsidian
 .obsidian/workspace.json
+.obsidian/community-plugins.json
+.obsidian/plugins/
 
 # Mac Finder
 .DS_Store

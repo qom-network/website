@@ -53,40 +53,40 @@ add_header 'Access-Control-Allow-Origin' '$http_origin' always;
 
 -　`default.conf.template`
 ```bash
-# Find this section
+# Do not delete any existing lines
 server {
     listen       8080;
     .
-    .
-    .
+    ..
+    ...
     # Change this line to the following:
     add_header 'Access-Control-Allow-Origin' '$http_origin' always;
     .
-    .
-    .
+    ..
+    ...
     location / {
       proxy_pass          http://stats:8050/;
       .
-      .
-      .
+      ..
+      ...
         }
 }
 
 server {
     listen       8081;
     .
-    .
-    .
+    ..
+    ...
     # Change this line to the following:
     add_header 'Access-Control-Allow-Origin' '$http_origin' always;
     .
-    .
-    .
+    ..
+    ...
     location / {
       proxy_pass          http://visualizer:8050/;
       .
-      .
-      .
+      ..
+      ...
       }
 }
 ```
@@ -99,7 +99,7 @@ If you want to make the scan site public, you will also need to configure the fo
 nano explorer.conf.template
 ```
 
-- `explorer.conf.template`
+- `explorer.conf.template:` Replace the contents of this file with the following:
 ```bash
 map $http_upgrade $connection_upgrade {
   default upgrade;
@@ -201,6 +201,7 @@ services:
       - chains
 ・
 ・
+ # Do not delete any existing lines
 ・
 ・
 # Add the following near the end of the lines:
@@ -286,7 +287,7 @@ services:
     networks: [default, chains]
     environment:
       ETHEREUM_JSONRPC_HTTP_URL:  "http://qom:8545/"
-      ETHEREUM_JSONRPC_WS_URL:    "http://qom:8546/"
+      ETHEREUM_JSONRPC_WS_URL:    "ws://qom:8546/"
       ETHEREUM_JSONRPC_TRACE_URL: "http://qom:8545/"
       NFT_MEDIA_HANDLER_ENABLED: "false"
       NFT_MEDIA_HANDLER_BACKFILL_ENABLED: "false"
@@ -311,6 +312,10 @@ services:
       NEXT_PUBLIC_IS_TESTNET: "false"
       NEXT_PUBLIC_STATS_API_HOST: "https://test.qom.network/stats"
       NEXT_PUBLIC_VISUALIZE_API_HOST: "https://test.qom.network/visualizer"
+      # configs for wallet connection
+      NEXT_PUBLIC_NETWORK_RPC_URL: "https://evm-rpc-ql1.foxxone.one"
+      # replace ID with your own project ID
+      NEXT_PUBLIC_WALLET_CONNECT_PROJECT_ID: "0cf69d84fef0dbc9e838d3269da2628b"
 
   proxy:
     networks: [default, chains]

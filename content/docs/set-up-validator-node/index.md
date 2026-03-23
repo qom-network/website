@@ -109,14 +109,41 @@ enable = true
 .
 .
 rpc_servers = "rpc.foxxone.one:443,138.201.133.24:26657,51.38.37.230:26687"
-trust_height = 8401000
-trust_hash = "3A0F8E792BB1D3AA0636F346FD3ED93F94E70CA624D697C50F67BA5BFCFB6FED"
+trust_height = 10052000
+trust_hash = "85B05855BAFACB3E0EE50BB4441705E428CF908AAAD9B4AB15F2E479DAA67898"
 trust_period = "112h0m0s"
 ```
 
 > Replace the latest values of `trust height` and `trust hash`.
 > Please get them from  [Ping Dashboard](https://ping.qom.one/qom/statesync)
 
+ <details>
+<summary><strong>⚠️ When ping dashboard is unavailable:</strong></summary>
+
+Retrieve trust height and trust hash manually (requires `jq`).
+
+Trust height:
+```bash
+LATEST=$(curl -sk https://rpc.foxxone.one/status | jq -r '.result.sync_info.latest_block_height')
+TRUST_HEIGHT=$(( ( (LATEST - 2000) / 1000 ) * 1000 ))
+echo $TRUST_HEIGHT
+```
+
+Trust hash:
+```bash
+for RPC in \
+"https://rpc.foxxone.one" \
+"http://138.201.133.24:26657" \
+"http://51.38.37.230:26687"
+do
+  echo "$RPC"
+  curl -s "$RPC/block?height=$TRUST_HEIGHT" | jq -r '.result.block_id.hash'
+done
+```
+
+> Obtain hash values of the same block height from three RPC servers and verify that they all match.
+
+</details>
 
 **Restart the container:**
 ```bash
@@ -165,12 +192,12 @@ If State Sync is enabled, sync to the latest block will complete in about 2–3 
 
 ### Add Funds to Your Wallet
 
-Convert bech32 address to EVM-style:  [Bech32 Wallet Address Prefix Converter](https://bech32.williamchong.cloud/)  
+Convert bech32 address to EVM-style:  [Address Converter](https://converter.teamtuzi.xyz/)  
 Then send QOM to EVM-style `0x...` address. (**⚠️It is highly recommended to first test with a small amount.**)
 
 ---
 
-## Step 7️⃣ Submit Validator Transaction
+## Step 7️⃣ Submit Create-validator Transaction
 
 ### Check Balance from your node
 ```bash
@@ -179,10 +206,10 @@ docker exec -it qom \
   --home /home/ubuntu/.qomd
 ```
 
->Replace `qom1xxx...` with **your own wallet address**.  
->Check that the funds you recently transferred have **arrived in your wallet**.  
->The balance is displayed in units of **`aqom`**.  
->**1 QOM = 1 × 10¹⁸ aqom**
+> Replace `qom1xxx...` with **your own wallet address**.  
+> Check that the funds you recently transferred have **arrived in your wallet**.  
+> The balance is displayed in units of **`aqom`**.  
+> **1 QOM = 1 × 10¹⁸ aqom**
 
 ### Submit Create-validator Transaction
 

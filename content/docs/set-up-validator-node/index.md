@@ -108,7 +108,7 @@ enable = true
 .
 .
 .
-rpc_servers = "rpc.foxxone.one:443,138.201.133.24:26657,51.38.37.230:26687"
+rpc_servers = "rpc.foxxone.one:443,comet-rpc-ql1.mschihuahua.org:443,138.201.133.24:26657,51.38.37.230:26687"
 trust_height = 10052000
 trust_hash = "85B05855BAFACB3E0EE50BB4441705E428CF908AAAD9B4AB15F2E479DAA67898"
 trust_period = "112h0m0s"
@@ -118,7 +118,7 @@ trust_period = "112h0m0s"
 > Please get them from  [Ping Dashboard](https://ping.qom.one/qom/statesync)
 
  <details>
-<summary><strong>⚠️ When ping dashboard is unavailable:</strong></summary>
+<summary><strong>⚠️ When ping dashboard is unavailable (click to open)</strong></summary>
 
 Retrieve trust height and trust hash manually (requires `jq`).
 
@@ -133,6 +133,7 @@ Trust hash:
 ```bash
 for RPC in \
 "https://rpc.foxxone.one" \
+"comet-rpc-ql1.mschihuahua.org" \
 "http://138.201.133.24:26657" \
 "http://51.38.37.230:26687"
 do

@@ -118,7 +118,7 @@ trust_period = "112h0m0s"
 > Please get them from  [Ping Dashboard](https://ping.qom.one/qom/statesync)
 
  <details>
-<summary><strong>⚠️ When ping dashboard is unavailable:</strong></summary>
+<summary><strong>⚠️ When ping dashboard is unavailable (click to open)</strong></summary>
 
 Retrieve trust height and trust hash manually (requires `jq`).
 
